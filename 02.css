@@ -1,0 +1,130 @@
+@import "reset.css";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "PartnerCondensed";
+  font-weight: bold;
+  src: url(fonts/PartnerCondensed.otf) format('truetype');
+}
+
+body {
+  font-family: "PartnerCondensed", monospace;
+  font-weight: bold;
+
+}
+
+a {
+  z-index: 1;
+}
+
+/*ШИЗОФРЕНИЯ */
+
+
+.shiza {
+  display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+
+.shiza h1 {
+  font-size: 114px;
+  /* text-align: center; */
+  display: block;
+}
+
+
+img {
+  width: 100vw;
+  /* height: 100vh; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.s1 {
+  animation: shake_1 5s ease infinite;
+  opacity: 80%;
+}
+.s2 {
+  animation: shake 8s ease infinite;
+  opacity: 80%;
+
+}
+
+
+@keyframes shake {
+  0% {
+    transform: translateX(5px);
+  }
+
+  5% {
+    transform: translateX(-15px);
+  }
+  10% {
+    transform: translate(7px,8px);
+  }
+  15% {
+    transform: translateX(-2px,-6px);
+  }
+  20% {
+    transform: translateX(15px);
+  }
+  30% {
+    transform: translateX(-8px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  80% {
+    transform: translateX(-9px);
+  }
+  100% {
+    transform: translateX(14px);
+  }
+
+
+}
+
+
+@keyframes shake_1 {
+  0% {
+    transform: translateX(-2px);
+  }
+
+  5% {
+    transform: translateX(5px);
+  }
+  10% {
+    transform: translate(-2px,-10px);
+  }
+  15% {
+    transform: translateX(6px,2px);
+  }
+  20% {
+    transform: translateX(-21px);
+  }
+  30% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-6px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(-14px);
+  }
+
+
+}

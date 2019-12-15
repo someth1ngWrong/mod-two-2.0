@@ -1,0 +1,51 @@
+@import "reset.css";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "PartnerCondensed";
+  font-weight: bold;
+  src: url(fonts/PartnerCondensed.otf) format('truetype');
+}
+
+body {
+  font-family: "PartnerCondensed", monospace;
+  font-weight: bold;
+
+}
+
+/*ШИЗОФРЕНИЯ */
+
+.shiza {
+  height: 100vh;
+
+}
+
+.shiza h1 {
+  font-size: 114px;
+
+}
+
+.load {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  animation: load 500ms ease normal;
+  animation-delay: 200ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes load {
+  100% {
+    transform: translateX(-100%);
+    /* opacity: 0; */
+  }
+}
