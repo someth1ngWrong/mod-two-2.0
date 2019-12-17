@@ -18,7 +18,9 @@ body {
 }
 
 a {
-  z-index: 1;
+  text-decoration: none;
+  color: black;
+
 }
 
 /*ШИЗОФРЕНИЯ */
@@ -27,17 +29,12 @@ a {
 .shiza {
   display: flex;
     align-items: center;
-    align-content: center;
     justify-content: center;
 }
 
 
-
-
 .shiza h1 {
   font-size: 114px;
-  /* text-align: center; */
-  display: block;
 }
 
 
@@ -52,10 +49,15 @@ img {
 }
 
 .s1 {
+  position: absolute;
+  z-index: -1;
   animation: shake_1 5s ease infinite;
   opacity: 80%;
+
 }
 .s2 {
+  position: absolute;
+  z-index: -1;
   animation: shake 8s ease infinite;
   opacity: 80%;
 
