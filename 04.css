@@ -14,8 +14,9 @@
 body {
   font-family: "PartnerCondensed", monospace;
   font-weight: bold;
-  background-color: black;
-
+  animation: black-white 25s ease infinite;
+  height: 100vh;
+  overflow: hidden;
 }
 
 a {
@@ -23,7 +24,28 @@ a {
   color: white;
 }
 
+.name {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   font-size: 114px;
   color: white;
+}
+
+@keyframes black-white {
+  0% {
+    background-color: white;
+  }
+
+  65% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: white;
+  }
 }

@@ -1,6 +1,7 @@
 @import "reset.css";
 
 * {
+  transition: all 400ms ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,6 +15,8 @@
 body {
   font-family: "PartnerCondensed", monospace;
   font-weight: bold;
+  overflow: hidden;
+
 
 }
 
@@ -24,4 +27,14 @@ a {
 
 h1 {
   font-size: 114px;
+  animation: size 3s ease infinite;
+}
+
+@keyframes size {
+  0, 100% {
+    font-size: 114px;
+  }
+  50% {
+    font-size: 200px;
+  }
 }

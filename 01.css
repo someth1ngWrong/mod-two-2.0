@@ -14,24 +14,29 @@
 body {
   font-family: "PartnerCondensed", monospace;
   font-weight: bold;
+  /* animation: black-white 100ms linear infinite; */
+  height: 100vh;
+  overflow: hidden;
 
 }
 
 a {
   text-decoration: none;
   color: black;
-
 }
 
 /*ШИЗОФРЕНИЯ */
 
-.shiza {
-  height: 100vh;
+ .name {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
 
-}
-
-.shiza h1 {
+h1 {
   font-size: 114px;
+  /* animation: rotation 120ms linear infinite;  */
 
 }
 
@@ -40,8 +45,25 @@ img {
   height: 4vh;
   position: absolute;
   right: 2vh;
-  top: 50vh;
-  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 50vh;
+  transform: translateY(-50%); */
+}
+
+@keyframes black-white {
+  0% {
+    background-color: white;
+  }
+  10% {
+    background-color: white;
+  }
+
+
+  100% {
+    background-color: black;
+  }
 }
 
 
@@ -62,5 +84,44 @@ img {
 @keyframes load {
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(5deg);
+  }
+  5% {
+    transform: rotate(-10deg);
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  15% {
+    transform: rotate(-15deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(-23deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  55% {
+    transform: rotate(-30deg);
+  }
+  70% {
+    transform: rotate(25deg);
+  }
+  80% {
+    transform: rotate(-20deg);
+  }
+  95% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-20deg);
   }
 }
