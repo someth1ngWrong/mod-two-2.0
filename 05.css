@@ -15,7 +15,7 @@
 body {
   font-family: "PartnerCondensed", monospace;
   font-weight: bold;
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 100vh
 }
 
@@ -29,19 +29,46 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  /* animation: scary 800ms ease infinite; */
+
 }
 h1 {
-  font-size: 10px;
-  margin: 0;
+  font-size: 114px;
   animation: grow 10s ease infinite;
+  margin-bottom: 0vh;
+  margin-right: -1vh;
+  /* animation: size 20s ease infinite; */
+  animation: scary 800ms ease infinite;
+
 }
 
 
 @keyframes size {
   0, 100% {
-    font-size: 114px;
+    font-size: 90px;
   }
   50% {
     font-size: 200px;
+  }
+}
+
+@keyframes scary {
+  0,100% {
+    transform: translate(52px,-23px);
+  }
+  10% {
+    transform: translate(-25px,11px);
+  }
+  25% {
+    transform: translate(19px,24px);
+  }
+  50% {
+    transform: translate(-46px,-43px);
+  }
+  70% {
+    transform: translate(3px,14px);
+  }
+  90% {
+    transform: translate(-42px,-24px);
   }
 }

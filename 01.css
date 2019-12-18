@@ -5,6 +5,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 @font-face {
   font-family: "PartnerCondensed";
   font-weight: bold;
@@ -14,15 +15,22 @@
 body {
   font-family: "PartnerCondensed", monospace;
   font-weight: bold;
-  /* animation: black-white 100ms linear infinite; */
+  animation: black-white 100ms linear infinite;
   height: 100vh;
   overflow: hidden;
 
 }
 
+.forvard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 a {
   text-decoration: none;
   color: black;
+
 }
 
 /*ШИЗОФРЕНИЯ */
@@ -36,7 +44,7 @@ a {
 
 h1 {
   font-size: 114px;
-  /* animation: rotation 120ms linear infinite;  */
+  animation: rotation 120ms ease infinite; 
 
 }
 
@@ -48,8 +56,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* top: 50vh;
-  transform: translateY(-50%); */
 }
 
 @keyframes black-white {

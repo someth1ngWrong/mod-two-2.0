@@ -26,7 +26,21 @@ a {
 
 }
 
-/*ШИЗОФРЕНИЯ */
+.forvard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-2 {
+  width: 4vw;
+  height: 4vh;
+  position: absolute;
+  right: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .shiza {
