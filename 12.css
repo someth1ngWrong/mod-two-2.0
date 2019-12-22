@@ -5,15 +5,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 @font-face {
-  font-family: "PartnerCondensed";
+  font-family: "Brozas";
   font-weight: bold;
-  src: url(fonts/PartnerCondensed.otf) format('truetype');
+  src: url(fonts/Brozas.ttf) format('truetype');
 }
 
 body {
-  font-family: "PartnerCondensed", monospace;
+  font-family: "Brozas", monospace;
   font-weight: bold;
   height: 100vh;
   overflow: hidden;
@@ -49,49 +48,35 @@ body {
  }
 
 h1 {
+  font-weight: 900;
   font-size: 114px;
   transform: translateY(20%);
-  color: red;
-  animation: rotation 120ms ease infinite;
+  animation: scale 12s ease infinite;
+  animation-delay: 700ms;
+
 }
 
-.klepto {
-  height: 80px;
-  transform: translateY(20%);
-}
-
-.elements {
-  width: 100vh;
-  width: 100vw;
-  position: absolute;
-}
-.e {
-  position: relative;
-  height: 14px;
-  left: 25vh;
-  top: 16px;
-  /* animation: go 5s ease-in infinite; */
-}
-
-
-@media (max-width: 980px) {
-  .e {
-
-    height: 13.3px;
-    left: 17.7vw;
-    top: 17px;
+@keyframes scale {
+  0% {
+    font-variation-settings: "wght" 700;
   }
-}
-
-@keyframes go {
-
-  30% {
-    transform: translateX(0px);
+  40% {
+    font-variation-settings: "wght" 400;
   }
+  90% {
+    font-variation-settings: "wght" 100;
+    font-size: 114px
+  }
+
+
+
   100% {
-    transform: translateX(-1000px);
+    font-variation-settings: "wght" 700;
   }
 }
+
+
+
 
 .load {
   background-color: black;

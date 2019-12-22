@@ -16,23 +16,9 @@ body {
   font-weight: bold;
   height: 100vh;
   overflow: hidden;
-
-
-}
-
-a {
-  text-decoration: none;
-  color: black;
-
 }
 
 .forvard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.arrow-2 {
   width: 4vw;
   height: 4vh;
   position: absolute;
@@ -42,8 +28,21 @@ a {
   align-items: center;
 }
 
+.back {
+  width: 4vw;
+  height: 4vh;
+  position: absolute;
+  left: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.shiza {
+
+
+
+
+.box {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -51,12 +50,16 @@ a {
 }
 
 
-.shiza h1 {
+.box h1 {
+  /* font-size: 114px; */
   font-size: 114px;
+  transform: translateY(20%);
+
 }
 
 
-img {
+.b1,
+.b2 {
   width: 100vw;
   /* height: 100vh; */
   position: absolute;
@@ -66,14 +69,14 @@ img {
   bottom: 0;
 }
 
-.s1 {
+.b1 {
   position: absolute;
   z-index: -1;
   animation: shake_1 5s ease infinite;
   opacity: 80%;
 
 }
-.s2 {
+.b2 {
   position: absolute;
   z-index: -1;
   animation: shake 8s ease infinite;
@@ -88,16 +91,16 @@ img {
   }
 
   5% {
-    transform: translateX(-15px);
+    transform: translateX(-1px);
   }
   10% {
     transform: translate(7px,8px);
   }
   15% {
-    transform: translateX(-2px,-6px);
+    transform: translateX(-1px,-6px);
   }
   20% {
-    transform: translateX(15px);
+    transform: translateX(5px);
   }
   30% {
     transform: translateX(-8px);
@@ -109,7 +112,7 @@ img {
     transform: translateX(-9px);
   }
   100% {
-    transform: translateX(14px);
+    transform: translateX(4px);
   }
 
 
@@ -125,13 +128,13 @@ img {
     transform: translateX(5px);
   }
   10% {
-    transform: translate(-2px,-10px);
+    transform: translate(-2px,-1px);
   }
   15% {
     transform: translateX(6px,2px);
   }
   20% {
-    transform: translateX(-21px);
+    transform: translateX(-2px);
   }
   30% {
     transform: translateX(5px);
@@ -143,8 +146,50 @@ img {
     transform: translateX(8px);
   }
   100% {
-    transform: translateX(-14px);
+    transform: translateX(-4px);
   }
+}
 
 
+.load {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  animation: load 350ms ease normal;
+  animation-delay: 200ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation-fill-mode: forwards;
+}
+
+.load-2 {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  animation: load-2 700ms ease normal;
+  animation-delay: 200ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes load {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes load-2 {
+
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-10000000%);
+  }
 }
