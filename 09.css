@@ -61,37 +61,94 @@ h1 {
 }
 
 .elements {
-  width: 100vh;
-  width: 100vw;
   position: absolute;
 }
 .e {
-  position: relative;
+  position: absolute;
+  /* height: 14px;
+  left: 22vh;
+  top: 16px; */
   height: 14px;
-  left: 25vh;
-  top: 16px;
-  /* animation: go 5s ease-in infinite; */
+  left: -25.9vh;
+  top: 10.2px;
+  animation: e 5s ease-in infinite;
 }
-
 
 @media (max-width: 980px) {
   .e {
-
     height: 13.3px;
+    left: -21.1vw;
+    top: 10.2px;
+
+    /* height: 13.3px;
     left: 17.7vw;
-    top: 17px;
+    top: 17px; */
   }
 }
 
-@keyframes go {
+@keyframes e {
 
-  30% {
+  60% {
     transform: translateX(0px);
   }
   100% {
     transform: translateX(-1000px);
   }
 }
+
+
+.a {
+  position: absolute;
+  height: 14px;
+  left: 15.4vh;
+  top: 27px;
+  animation: a 5s ease-in infinite;
+}
+
+@media (max-width: 980px) {
+  .a {
+    height: 14px;
+    left: 12.7vw;
+    top: 27px;
+  }
+}
+
+@keyframes a {
+
+  40% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateY(1000px);
+  }
+}
+
+.h {
+  position: absolute;
+  height: 14px;
+  left: 23.4vh;
+  top: 13px;
+  animation: h 5s ease-in infinite;
+}
+
+@media (max-width: 980px) {
+  .h {
+    height: 14px;
+    left: 19.1vw;
+    top: 13px;
+  }
+}
+
+@keyframes h {
+
+  45% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateY(-1000px);
+  }
+}
+
 
 .load {
   background-color: black;

@@ -19,13 +19,30 @@ body {
   overflow: hidden;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+
+
+.box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.name {
-  height: 100vh;
+.forvard {
+  width: 4vw;
+  height: 4vh;
+  position: absolute;
+  right: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back {
+  width: 4vw;
+  height: 4vh;
+  position: absolute;
+  left: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,18 +51,64 @@ a {
 h1 {
   font-size: 114px;
   color: white;
+  transform: translateY(20%);
+
 }
 
 @keyframes black-white {
   0% {
-    background-color: white;
-  }
-
-  65% {
     background-color: black;
   }
 
-  100% {
+  65% {
     background-color: white;
+  }
+
+  100% {
+    background-color: black;
+  }
+}
+
+
+.load {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  animation: load 350ms ease normal;
+  animation-delay: 200ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation-fill-mode: forwards;
+}
+
+.load-2 {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  animation: load-2 700ms ease normal;
+  animation-delay: 200ms;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes load {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes load-2 {
+
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-10000000%);
   }
 }
