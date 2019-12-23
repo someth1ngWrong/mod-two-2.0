@@ -18,25 +18,32 @@ body {
   overflow: hidden;
 }
 
+.logo {
+  width: 65vw;
+}
+
 .forvard {
   /* width: 4vw; */
-  height: 200px;
-  position: absolute;
-  right: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: white 400ms linear infinite;
-  transform: translateY(-40%);
+  height: 80px;
+    position: absolute;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: white 800ms ease-out infinite;
+    transform: translateY(-20%);
 }
+
+
 .forvard-w {
-  /* width: 4vw; */
-  height: 200px;
+  height: 80px;
   position: absolute;
-  right: 80px;
+  right: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* animation: white 800ms ease-out infinite; */
+  transform: translateY(-20%);
 }
 
 @keyframes white {
@@ -48,14 +55,17 @@ body {
   }
 }
 
-.back {
-  width: 4vw;
-  height: 4vh;
+.round {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  border-radius: 100%;
   position: absolute;
-  left: 2vh;
+  right: 81px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(29%);
 }
 
 
@@ -99,7 +109,7 @@ body {
 .w {
   position: absolute;
   z-index: -1;
-  animation: shake 10s ease infinite;
+  animation: shake 5s ease infinite;
     width: 100vw;
 
 }
