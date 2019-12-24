@@ -15,7 +15,7 @@
 body {
   font-family: "PartnerCondensed", monospace;
   font-weight: bold;
-  /* animation: black-white 100ms linear infinite; */
+  animation: black-white 100ms linear infinite;
   height: 100vh;
   overflow: hidden;
 }
