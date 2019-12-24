@@ -25,21 +25,96 @@ a {
 
 h1 {
   font-size: 114px;
-  transform: translateY(20%);
+  /* transform: translateY(20%); */
 }
 
 span {
+  /* position: absolute;
+  bottom: 10vh;
+  right: 10vh; */
   font-size: 114px;
-  transform: translateY(20%);
-  animation: i 3s ease infinite;
+  margin-left: 1vw;
+  /* transform: translateY(20%); */
+  /* transform-origin: -20% 85% 0px; */
+  animation-delay: 200ms;
+  animation: i 5s linear infinite;
 }
 
 @keyframes i {
-  100% {
-    transform: translate(20vw);
+  2% {
+    transform: scale(1.5);
+  }
+  4% {
+    transform: scale(1);
+  }
+  6% {
+    transform: scale(1.5);
+  }
+  8% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.5);
+  }
+  12% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.5);
+  }
+  16% {
+    transform: scale(1);
+  }
+  18% {
+    transform: scale(1.5);
+  }
+  20% {
+    transform: scale(1);
+  }
+  22% {
+    transform: scale(1.5);
+  }
+  24% {
+    transform: scale(1);
+  }
+  26% {
+    transform: scale(1.5);
+  }
+  28% {
+    transform: scale(1);
+  }
+  35% {
+    transform: translateY(20vw);
+  }
+  40% {
+    transform: scale(2);
+    transform: translateY(20vw);
+  }
+    100% {
+      color: red;
+    transform: scale(2);
+    transform: translateY(20vw);
+  }
+}
+
+/* .z {
+  position: absolute;
+  bottom: 10vh;
+  right: 10vh;
+  animation: z 10s ease infinite;
+}
+
+@keyframes z {
+  40% {
+
+    transform: translate(0);
   }
 
-}
+  60% {
+
+    transform: translate(-15vh,-15vh);
+  }
+} */
 
 .forvard {
     width: 4vw;
