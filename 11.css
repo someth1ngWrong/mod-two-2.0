@@ -29,11 +29,11 @@ h1 {
 }
 
 span {
-  /* position: absolute;
-  bottom: 10vh;
+  position: absolute;
+  /* bottom: 10vh;
   right: 10vh; */
   font-size: 114px;
-  margin-left: 1vw;
+  /* margin-left: 1vw; */
   /* transform: translateY(20%); */
   /* transform-origin: -20% 85% 0px; */
   animation-delay: 200ms;
@@ -41,7 +41,19 @@ span {
 }
 
 @keyframes i {
-  2% {
+  0% {
+    bottom: 50vh;
+    right: 30vw;
+}
+  80% {
+    bottom: 10vh;
+    right: 10vh;
+}
+  100% {
+    bottom: 10vh;
+    right: 10vh;
+}
+  /* 2% {
     transform: scale(1.5);
   }
   4% {
@@ -94,7 +106,7 @@ span {
       color: red;
     transform: scale(2);
     transform: translateY(20vw);
-  }
+  } */
 }
 
 /* .z {
