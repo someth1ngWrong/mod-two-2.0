@@ -18,7 +18,7 @@ body {
   overflow: hidden;
 }
 
-.box h1 {
+h1 {
   /* font-size: 114px; */
   font-size: 114px;
   transform: translateY(20%);
@@ -61,20 +61,6 @@ span {
   100% {
     transform: translateY(1500px);
   }
-
-
-
-
-
-
-  /* 60% {
-    color: red;
-    transform: translateY(1000px);
-  }
-  100% {
-    color: red;
-    transform: translateY(1000px);
-  } */
 }
 
 

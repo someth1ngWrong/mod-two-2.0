@@ -69,7 +69,7 @@ h1 {
   left: 22vh;
   top: 16px; */
   height: 14px;
-  left: -25.9vh;
+  left: -14.5vh;;
   top: 10.2px;
   animation: e 5s ease-in infinite;
 }
@@ -100,7 +100,7 @@ h1 {
 .a {
   position: absolute;
   height: 14px;
-  left: 15.4vh;
+  left: 8.6vh;
   top: 27px;
   animation: a 5s ease-in infinite;
 }
@@ -126,7 +126,7 @@ h1 {
 .h {
   position: absolute;
   height: 14px;
-  left: 23.4vh;
+  left: 13vh;
   top: 13px;
   animation: h 5s ease-in infinite;
 }
